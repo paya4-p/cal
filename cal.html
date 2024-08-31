@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="display" id="display" readonly>
+        <div class="buttons">
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn button" onclick="appendNumber('7')">7</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendNumber('8')">8</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendNumber('9')">9</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendOperator('/')">/</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn button" onclick="appendNumber('4')">4</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendNumber('5')">5</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendNumber('6')">6</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendOperator('*')">*</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn button" onclick="appendNumber('1')">1</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendNumber('2')">2</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendNumber('3')">3</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendOperator('-')">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn button zero" onclick="appendNumber('0')">0</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendOperator('.')">.</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn button" onclick="appendOperator('+')">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn button equal" onclick="calculate()">=</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn button" onclick="clearDisplay()">C</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- script editable -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
